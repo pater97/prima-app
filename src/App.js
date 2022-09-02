@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Button from './components/ui/Button';
+import ButtonTwo from './components/ui/ButtonTwo';
+import ButtonTrhee from './components/ui/ButtonTrhee';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button
+        label={'prova'}
+        bgColor={'red'}
+      />
+      <ButtonTwo
+        label={'prova2'}
+        objCss={
+          {
+            backgroundColor:'green',
+            width:'150px',
+            padding:'2rem'
+          }
+        }
+      />
+      <ButtonTrhee
+        label={'prova3'}
+        classCss={'buttonClass'}
+      />
     </div>
   );
 }
