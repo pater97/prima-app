@@ -1,0 +1,19 @@
+.inputbox{
+    display: flex;
+    justify-content: center;
+}
+input::placeholder{
+    color: orangered;
+}
+input:focus{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    transition: .2s all;
+    color: blueviolet;
+}
+input:focus-within{
+    border: 2px solid violet;
+}
+input::placeholder:focus{
+    color: green;
+}
